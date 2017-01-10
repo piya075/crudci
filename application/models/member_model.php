@@ -9,7 +9,15 @@ class member_model  extends CI_Model  {
     
     public function checklogin()
     {
-        redirect('login');
+        if($this->uri->segment(1) == 'login')
+        {
+            
+        }
+        else
+        {
+             redirect('login');
+        }
+       
     }
 
 }
